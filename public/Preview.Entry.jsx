@@ -8,7 +8,7 @@ var Preview = require('./Preview.jsx');
 
 ReactDOM.render(
 	<div>
-		<h3>Simple HTTP File Server</h3>
+		<h3>RoweTech ADCP HTTP File Server</h3>
 		<Preview/>
 	</div>,
 	document.getElementById('content')

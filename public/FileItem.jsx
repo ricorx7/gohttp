@@ -1,5 +1,5 @@
 var React = require('react')
-var {ButtonToolbar, DropdownButton, Button, 
+var {ButtonToolbar, DropdownButton, Button,
 	MenuItem, Modal} = require('react-bootstrap');
 var humanize = require('humanize')
 var urljoin = require('url-join');
@@ -52,9 +52,7 @@ var FileItem = React.createClass({
 					bsSize="xsmall" href={link+'?download=true'}>
 					Download <i className="fa fa-download"/>
 				</Button>,
-				<Button key="qrcode" bsSize="xsmall" onClick={open}>
-					QRCode <i className="fa fa-qrcode"/>
-				</Button>
+
 			)
 		} else if (this.props.data.type == 'directory') {
 			ctrlButtons.push(
@@ -71,7 +69,7 @@ var FileItem = React.createClass({
 					{fileIcon}
 				</td>
 				<td>
-					<a onClick={(e)=>this.props.onDirectoryChange && this.props.onDirectoryChange(link, e)} 
+					<a onClick={(e)=>this.props.onDirectoryChange && this.props.onDirectoryChange(link, e)}
 						href={fileLink}>{this.props.data.name}</a>
 				</td>
                 {/* Action */}

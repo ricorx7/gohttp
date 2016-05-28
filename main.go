@@ -18,8 +18,10 @@ import (
 	"gopkg.in/macaron.v1"
 )
 
+// VERSION number
 const VERSION = "0.1.3"
 
+// Configure holds the configurations
 type Configure struct {
 	port     int
 	root     string
@@ -109,6 +111,7 @@ func initRouters() {
 	m.Get("/-/:name(.*).bundle.js", ReloadProxy)
 }
 
+// FTPAuth is the FTP authorization
 type FTPAuth struct {
 	Username string
 	Password string
